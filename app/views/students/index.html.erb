@@ -1,0 +1,5 @@
+<% @students.each do |student| %>
+<%= content_tag(:div, student, class: "student-index-page") do %>
+<%= content_tag(:p, "#{student.first_name} #{student.last_name}") %>
+<% end %>
+<% end %>
